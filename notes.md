@@ -7,7 +7,10 @@
 * Docker install steps: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
     * Imp points: Need to set up the repository first before apt istall finds docker.
 
-* 
+* `docker network create 'kafka-spark-network'` 
+* go to python/docker/kafka folder and `docker compose up`
+* create volume: `docker volume create --name=hadoop-distributed-file-system`
+
 
 
 # Key concepts
