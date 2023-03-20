@@ -1,15 +1,21 @@
 import csv
 import gzip
+from sqlite3 import Row
 from time import sleep
 from typing import Dict
 from kafka import KafkaProducer
+import sys
 
 from settings import BOOTSTRAP_SERVERS 
 
-INPUT_DATA_PATH = '../../resources/fhv_tripdata_2019-01.csv.gz'
+# INPUT_DATA_PATH = '../../resources/fhv_tripdata_2019-01.csv.gz'
 
-PRODUCE_TOPIC_RIDES_CSV = 'fhv_csv'
+PRODUCE_TOPIC_RIDES_CSV = sys.argv[1]
 
+if 'fhv' in PRODUCE_TOPIC_RIDES_CSV:
+    INPUT_DATA_PATH = '../../resources/fhv_tripdata_2019-01.csv.gz'
+elif 'green' in PRODUCE_TOPIC_RIDES_CSV:
+    INPUT_DATA_PATH = '../../resources/green_tripdata_2019-01.csv.gz'
 
 def delivery_report(err, msg):
     if err is not None:
@@ -33,7 +39,8 @@ class RideCSVProducer:
             header = next(reader)  # skip the header
             for row in reader:
                 # vendor_id, passenger_count, trip_distance, payment_type, total_amount
-                records.append(f'{row[0]}, {row[1]}, {row[2]}, {row[3]}, {row[4]}, {row[5]}, {row[6]}')
+                # records.append(f'{row[0]}, {row[1]}, {row[2]}, {row[3]}, {row[4]}, {row[5]}, {row[6]}')
+                records.append(', '.join(row))
                 ride_keys.append(str(row[0]))
                 i += 1
                 if i == 5:
