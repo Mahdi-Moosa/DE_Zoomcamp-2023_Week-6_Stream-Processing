@@ -1,8 +1,10 @@
 from pyspark.sql import SparkSession
 import pyspark.sql.functions as F
+# import os
 
 from settings import RIDE_SCHEMA, CONSUME_TOPIC_RIDES_CSV, TOPIC_WINDOWED_VENDOR_ID_COUNT
 
+# os.system('spark-submit --version')
 
 def read_from_kafka(consume_topic: str):
     # Spark Streaming DataFrame, connect to Kafka topic served at host in bootrap.servers option

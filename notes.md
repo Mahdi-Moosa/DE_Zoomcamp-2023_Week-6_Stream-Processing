@@ -34,3 +34,6 @@
 
 * Good resource on Kafka-partitioning:
     * https://www.openlogic.com/blog/kafka-partitions
+
+* Tutorial run failed initially. There was a version mismatch between installed spark (3.3.2) and spark that was installed in docker (`spark-submit --version` showed 3.3.1).
+    * To solve this, modified build.sh and spark-base.Dockerfile to install spark version 3.3.2. After docker build, `streaming.py` ran successfully.
