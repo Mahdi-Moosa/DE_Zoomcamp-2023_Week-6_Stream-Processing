@@ -43,7 +43,7 @@ class RideCSVProducer:
                 records.append(', '.join(row))
                 ride_keys.append(str(row[0]))
                 i += 1
-                if i == 5:
+                if i == 5500:
                     break
         return zip(ride_keys, records)
 
