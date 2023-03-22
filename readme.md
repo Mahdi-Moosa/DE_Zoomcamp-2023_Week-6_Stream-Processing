@@ -58,7 +58,6 @@ Within this directory, there are 3 python scripts:
         +------------+----------------+
         only showing top 20 rows
 
-        23/03/22 15:00:42 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 5000 milliseconds, but spent 44631 milliseconds
         -------------------------------------------
         Batch: 0
         -------------------------------------------
