@@ -21,5 +21,6 @@ Within this directory, there are 3 python scripts:
     * `python producer_modified.py 'fhv_csv'` to run the fhv data (in the ../../resources directory)
     * `python producer_modified.py 'green_csv'` to run the green data (in the ../../resources directory)
 
-* consumer_modified.py  
+* *consumer_modified.py:* Kafka Consumer script. By default, consumes 'fhv_csv' topic. To consume, 'green_csv':
+    * run `python consumer_modified.py --topic 'green_csv'`
 * streaming_modified.py
