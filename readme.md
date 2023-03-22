@@ -10,6 +10,11 @@ Please implement a streaming application, for finding out popularity of PUlocati
 Please use the datasets [fhv_tripdata_2019-01.csv.gz](https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/fhv)
 and [green_tripdata_2019-01.csv.gz](https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/green). 
 
+To run the scripts below, these two files need to be saved at: `zoomcamp_repo_week_6_stream_processing/python/resources/`
+One way to download these files would be:
+   * go to the resoures folder in shell.
+   * run: `wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/fhv/fhv_tripdata_2019-01.csv.gz` and `wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-01.csv.gz`
+
 ## Solution
 
 Solutions to the assignment are provided in following sub-directory:
