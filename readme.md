@@ -23,4 +23,6 @@ Within this directory, there are 3 python scripts:
 
 * *consumer_modified.py:* Kafka Consumer script. By default, consumes 'fhv_csv' topic. To consume, 'green_csv':
     * run `python consumer_modified.py --topic 'green_csv'`
-* streaming_modified.py
+
+* *streaming_modified.py:* This script reads both 'fhv_csv' and 'green_csv' kafka topics and performs aggregation based on *pickup location id*. This script needs to be submitted to spark (by spark-submit). A bash script is available in the pyspark folder. To run the script:
+    * run: `./../pyspark/spark-submit.sh streaming_modified.py`
