@@ -11,6 +11,6 @@
 ## Solution
 
 Solutions to the assignment are provided in following sub-directory:
-        zoomcamp_repo_week_6_stream_processing/python/streams-example/pyspark_ny_taxi/
+        `zoomcamp_repo_week_6_stream_processing/python/streams-example/pyspark_ny_taxi/`
 
-        Link: https://github.com/Mahdi-Moosa/DE_Zoomcamp-2023_Week-6_Stream-Processing/tree/main/zoomcamp_repo_week_6_stream_processing/python/streams-example/pyspark_ny_taxi
+Link: https://github.com/Mahdi-Moosa/DE_Zoomcamp-2023_Week-6_Stream-Processing/tree/main/zoomcamp_repo_week_6_stream_processing/python/streams-example/pyspark_ny_taxi
