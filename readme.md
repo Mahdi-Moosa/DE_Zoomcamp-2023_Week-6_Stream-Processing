@@ -1,6 +1,8 @@
 # Folder description
 
-* zoomcamp_repo_week_6_stream_processing: Contains files from Week-6 lecture repository.
+* zoomcamp_repo_week_6_stream_processing: Contains 
+    * files from Week-6 lecture repository.
+    * solution for week-6 stream processing homework.
 
 ## Assignment description:
 
